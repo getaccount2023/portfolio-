@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+    
+<meta charset="utf-8">
+<title>2224079</title>
+<meta name="description"  content="書籍「動くWebデザインアイディア帳」のサンプルサイトです">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-3-9/css/5-3-9.css">
+
+
+
+<style>
+
+    /* スタイルシートでヘッダーのスタイルを指定します */
+    .gnavi{
+    display: flex;
+    margin:0 0 50px 0;
+    list-style: none;
+}
+
+.gnavi li a{
+    display: block;
+    text-decoration: none;
+    color: #000000;
+}
+
+.gnavi li{
+    margin-bottom:20px;
+}
+
+/*==================================================
+　5-3-9 テキストが入れ替わる
+===================================*/
+
+
+.gnavi li a{
+    /*テキストの基点とするためrelativeを指定*/
+	position: relative;
+    /*はみ出る要素を隠す*/
+	overflow: hidden;
+	padding:10px 60px;
+}
+
+.gnavi li span{
+    /*絶対配置でテキストの位置を決める*/
+	position: absolute;
+	left: 50%;
+	top:0;
+    /*アニメーションの指定*/
+	transition: all .5s;
+	transform: translate(-50%, 0);/*X方向に-50% ※中央寄せにするため*/
+  /*ブロック要素にして透過なし、テキスト折り返しなし*/  
+	display: block;
+	opacity:1;
+	white-space: nowrap;
+}
+
+/*差し替わるテキストの設定*/
+.gnavi li span:nth-child(2){
+	opacity:0;/*透過0に*/
+    transform: translate(-50%,100%);/*X方向に-50% Y方向に100%*/
+}
+
+/*hoverするとテキストが入れ替わる設定*/
+.gnavi li:hover span:nth-child(1){
+	opacity:0;/*透過0に*/
+    transform: translate(-50%,-100%);/*X方向に-50% Y方向に-100%*/
+}
+
+.gnavi li:hover span:nth-child(2){
+	opacity:1;/*不透明に*/
+	transform: translate(-50%, 0);/*X方向に-50% Y方向に0*/
+}
+
+
+header{
+    font-family: 'Handlee', cursive;
+}
+
+
+body{
+    
+    font-family: 'Zen Maru Gothic', cursive;
+}
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen Maru Gothic&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+<link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/7-2/css/reset.css">
+<link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/7-2/css/7-2.css">
+</head>
+
+<header>
+    
+  
+  <ul class="gnavi">
+ <div style="font-size: 11;"> <li class="current"><a href="file:///c%3A/Users/somang.pc/Desktop/%E3%83%9D%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%AA%E3%82%AA%E3%83%97%E3%83%AD%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB/index.html"><span>home</span><span>home</span></a></li>
+  <li><a href="file:///c%3A/Users/somang.pc/Desktop/%E3%83%9D%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%AA%E3%82%AAmovie-%20%E3%82%B3%E3%83%94%E3%83%BC/index.html"><span>movie</span><span>movie</span></a></li>
+  <li><a href="#"><span>art</span><span>art</span></a></li>
+  
+  </ul>
+
+
+
+</header>
+
+<body>
+
+
+<div class="zoomOut"><a href="https://www.figma.com/proto/9RbBYqqEqKCS9d6UstVTgb/vol07.2224079?typ
+    e=design&node-id=16-48&t=iwttKMxT6TBID1FB-1&scaling=scale-down&page-id=0%3A1&starting-point-node-
+    id=16%3A48&mode=design"><span class="mask"><img src="無題.png" alt=""></span></a></div>
+
+
+    
+  <div style="text-align: center;"><p>    Web演習2023</p>
+  <p> ホテル会員アプリデザイン課題  </p>
+  <p> 大学2年時の作品</p>
+  <p>    figmaで制作</p></div>
+    <div class="zoomOut" ><a href=""><span class="mask"><br><br><br><br><br><img src="イラスト23.jpg" ></span></a></div>
+　<div style="text-align: center;"><p>自主制作</p>
+<p>クリップスタジオで制作</p></div>
+    <div class="zoomOut"><a href=""><span class="mask"><img src=""></span></a></div>
+
+    <div class="zoomOut"><a href=""><span class="mask"><img src="イラスト19.jpg"></span></a></div>
+<div style="text-align: center;"><p>高校三年時のデッサン</p></div>
+    <div style="text-align: center;"  class="zoomOut"><a href=""><span class="mask"><img src="イラスト20.jpg"text-align="center" ></span></a></div>
+<div style="text-align: center;"><p>高校三年時のデッサン</p><br><br><br>
+
+    
+
+
+
+
+  </body>
+
+</html>
+<header>
+    
+    

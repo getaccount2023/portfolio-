@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html >
+<head>
+    
+
+  <title>i2224079
+  </title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-3-9/css/5-3-9.css">
+
+  <style>
+    .gnavi{
+    display: flex;
+    flex-wrap: wrap;/*スマホ表示折り返し用なのでPCのみなら不要*/
+    margin:0 0 50px 0;
+    list-style: none;
+}
+
+.gnavi li a{
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.gnavi li{
+    margin-bottom:20px;
+}
+
+/*==================================================
+　5-3-9 テキストが入れ替わる
+===================================*/
+
+
+.gnavi li a{
+    /*テキストの基点とするためrelativeを指定*/
+	position: relative;
+    /*はみ出る要素を隠す*/
+	overflow: hidden;
+	padding:10px 60px;
+}
+
+.gnavi li span{
+    /*絶対配置でテキストの位置を決める*/
+	position: absolute;
+	left: 50%;
+	top:0;
+    /*アニメーションの指定*/
+	transition: all .5s;
+	transform: translate(-50%, 0);/*X方向に-50% ※中央寄せにするため*/
+  /*ブロック要素にして透過なし、テキスト折り返しなし*/  
+	display: block;
+	opacity:1;
+	white-space: nowrap;
+}
+
+/*差し替わるテキストの設定*/
+.gnavi li span:nth-child(2){
+	opacity:0;/*透過0に*/
+    transform: translate(-50%,100%);/*X方向に-50% Y方向に100%*/
+}
+
+/*hoverするとテキストが入れ替わる設定*/
+.gnavi li:hover span:nth-child(1){
+	opacity:0;/*透過0に*/
+    transform: translate(-50%,-100%);/*X方向に-50% Y方向に-100%*/
+}
+
+.gnavi li:hover span:nth-child(2){
+	opacity:1;/*不透明に*/
+	transform: translate(-50%, 0);/*X方向に-50% Y方向に0*/
+}
+
+.responsive-image {
+      max-width: 800px;
+      height: auto;
+    }
+
+
+
+  body {
+    background-color: #ffffff;
+    font-family: 'Zen Maru Gothic', cursive;
+  
+  }
+
+header{
+  font-family: 'Handlee', cursive;
+}
+
+  </style>
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen Maru Gothic&display=swap" rel="stylesheet">
+  
+</head>
+
+  <header>
+   <!-- ヘッダー -->
+   <ul class="gnavi">
+    <div style="font: size ;"><li class="current"><a href="file:///c%3A/Users/somang.pc/Desktop/%E3%83%9D%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%AA%E3%82%AA%E3%83%97%E3%83%AD%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB/index.html"><span>home</span><span>home</span></a></li><!--現在地にはcurrentクラスを付ける-->
+    <li><a href="#"><span>movie</span><span>movie</span></a></li>
+    <li><a href="file:///c%3A/Users/somang.pc/Desktop/%E3%83%9D%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%AA%E3%82%AAart/index.html"><span>art</span><span>art</span></a></li>
+    
+    </ul>
+  </header>
+  
+  
+  <body>
+  
+
+ 
+  <!-- ここにメインコンテンツなどの追加要素を配置します -->
+
+ 
+
+
+
+
+ 
+ 
+
+
+<div class="image-container">
+  
+</div>
+
+ 
+ 
+
+
+
+
+
+
+    <br><br><br><br><br></br><div style="text-align:center;"><iframe width="560" height="315"src="https://www.youtube.com/embed/H0U4aNGxT60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</text><P>3D基礎演習のスライムアニメーション制作課題</P>
+<p>大学一年時前期の作品</p>
+<p>blenderで制作</p>
+    <br><br><br><br><div style="text-align:center;">  <iframe width="560" height="315" src="https://www.youtube.com/embed/aca78E3W15E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>映像演習の映像制作課題</p>
+<p>大学一年時の後期の作品</p><br><br><br><br></div>
+
+
+
+
+
+
+ </body>
+
+
+
+
+
+
+</html>
